@@ -51,7 +51,7 @@ ElseIf c <> "" Then ' Process by Passenger Name
 	Else
 		Reporter.ReportEvent micFail, "Search Order - Name not found", "Order with Passenger Name containing " & c & " does not exist. Exiting..."
 		WpfWindow("OpenText MyFlight Sample Ap[plication").WpfButton("BACK").Click
-		WpfWindow("OpenText MyFlight Sample Application").Close
+		WpfWindow("OpenText MyFlight Sample Ap[plication").Close
 		ExitAction
 	End If	
 End If
