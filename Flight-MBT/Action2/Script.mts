@@ -29,6 +29,7 @@ WpfWindow("OpenText MyFlight Sample Application").WpfButton("SELECT FLIGHT").Cli
 WpfWindow("OpenText MyFlight Sample Application").WpfEdit("passengerName").Set f
 WpfWindow("OpenText MyFlight Sample Application").WpfButton("ORDER").Click
 
+
 Wait 2 ' The Exist statement below seems to find a little box that exists if we run too fast - so the Wait is necessary
 'Wait for Completed message to appear (about 3-4 seconds)
 If WpfWindow("OpenText MyFlight Sample Application").WpfObject("OrderCompletedMessage").Exist (4) Then
